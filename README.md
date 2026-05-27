@@ -11,6 +11,11 @@ Some of the questions we plan to answer:
 
 This knowledge will help content creators optomize their videos towards their goals. It will help marketing teams understand audience behavior.
 
+___
+
+![alt text](image-10.png)
+
+___
 
 ## The Dataset
 The dataset contains information on viewer activity in different countries. Columns we are working with include: trending date, publish time, likes, dislikes, category, and tags (?). The data is relatively clean and not missing large portions of the information. The features relate different points of interest about how often videos are viewed and how polarized or neutral the content was perceived to be by the viewer. 
