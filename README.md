@@ -5,7 +5,7 @@
 
 What is the most trending category at a certain point in time? Do certain categories being out lead to certain categories being in?
 How does engagement or controversy drive views?
-What categories trend the fastest? Is there seasonality to it?
+What categories trend the fastest?
 
 ## Clearly state a projected possible benefit to your inquiry
 ### This knowledge will help content creators optomize their videos towards their goals. It will help marketing teams understand audience behavior.
