@@ -9,18 +9,18 @@ Some of the questions we plan to answer:
 - How does engagement or controversy drive views?
 - What categories trend the fastest?
 
-### This knowledge will help content creators optomize their videos towards their goals. It will help marketing teams understand audience behavior.
+This knowledge will help content creators optomize their videos towards their goals. It will help marketing teams understand audience behavior.
 
 
 ## The Dataset
-### The dataset contains information on viewer activity in different countries. Columns we are working with include: trending date, publish time, likes, dislikes, category, and tags (?). The data is relatively clean and not missing large portions of the information. The features relate different points of interest about how often videos are viewed and how polarized or neutral the content was perceived to be by the viewer. 
+The dataset contains information on viewer activity in different countries. Columns we are working with include: trending date, publish time, likes, dislikes, category, and tags (?). The data is relatively clean and not missing large portions of the information. The features relate different points of interest about how often videos are viewed and how polarized or neutral the content was perceived to be by the viewer. 
 
 ## Analysis Overview
 
-**Motivation**
+**Motivation.**
 Taking Youtube datasets to help inform content creators on what categories are currently trending and their historical rises and falls. Looks at controversy by comparing the ratio between likes and dislikes amongst categories to highlight which subjects may face more or less resistance.
 
-**Summary of Findings**
+**Summary of Findings.**
 `Entertainment` and `Music` typically highest in terms of views. If content creators works don't fall in these two categories, a different presentation medium may be warranted. If content can be packaged into the top categories, viewership may increase. `Nonprofits & Activism` and `News & Politics` were very controversial topics and created a lot of engagement and/or trended very quickly.
 
 ___
@@ -131,7 +131,7 @@ Then we got each of the ratios of likes vs. dislikes compared to the total amoun
 us_df['like_ratio']= us_df["likes"] / us_df["total_thumbs"]
 us_df['dislike_ratio']= us_df["dislikes"] / us_df["total_thumbs"]
 ```
-Example.
+Example Data.\
 ![alt text](image.png)
 
 We also got a metric for how many people viewed the video, but did not leave a like or dislike.
@@ -293,3 +293,20 @@ We found that `Nonprofits & Activism` was the quickest to trend, `Autos & Vehicl
 
 # Findings
 
+### What is the most trending category at a certain point in time?
+Music dominated almost all year long among all of the categories, with the Entertainment in close second. All other categories were mostly linear throughout the year. Music spiked closer to the summer months, but no conclusion can be given because data for only half a year was analyzed.
+
+### Do certain categories being out lead to certain categories being in?
+One correlation we observed was Music and Entertainment spiking closer to the summer months. This data may or may not be caused by each other, or could possibly be influenced by another factor. More data would be needed to make a solid conclusion.
+
+### How does engagement or controversy drive views?
+We measured engagement and controversy by the number of likes and dislikes. Some of the categories that we found to be not as popular in terms of views turned out to have higher engagement, meaning they had either a more dispraportionate amount of likes/dislikes or the amount of likes/dislikes as a raw number was very high. We concluded that these categories were more "controversial", or more people engaged with those topics. People may feel more strongly about these topics and therefore chose to engage in those videos. Those topics included `News & Politics` and `Nonprofits & Activism`.
+
+### What categories trend the fastest?
+Similarly, the `Nonprofits & Activism` category took the least amount of time to "trend", despite being one of the lower watches categories. We speculated that these categories appeal to human emotion, which drives engagement and caused them to trend faster.
+
+# Future Analysis
+
+Some of the things we would like to analyze given more time:
+
+- Correlating tags with engagement and controversy
