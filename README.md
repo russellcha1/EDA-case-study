@@ -18,7 +18,10 @@ ___
 ___
 
 ## The Dataset
-The dataset contains information on viewer activity in different countries. Columns we are working with include: trending date, publish time, likes, dislikes, category, and tags (?). The data is relatively clean and not missing large portions of the information. The features relate different points of interest about how often videos are viewed and how polarized or neutral the content was perceived to be by the viewer. 
+The dataset contains information on viewer activity in different countries. Columns we are working with include: trending date, publish time, likes, dislikes, category, and tags. The data is relatively clean and not missing large portions of the information. The features relate different points of interest about how often videos are viewed and how polarized or neutral the content was perceived to be by the viewer.
+
+**Note.**
+The `trending_date` column is based on YouTube's algorithm for determining trending videos to put on the Trending page. If a video gains views and or engagement (comments, likes, dislikes) quickly, it is considered "trending".
 
 ## Analysis Overview
 
@@ -172,7 +175,7 @@ plt.show()
 
 ![alt text](image-3.png)
 
-Most of the data was found to be linear, except for two categories: Music and Entertainment.
+There were no significant trends, except for two categories: `Music` and `Entertainment`.
 
 From this finding, we wanted to dig deeper into the top and bottom categories to see their trends in a more clear graph. We graphed both the top 3 and the bottom 3 to discover more.
 
@@ -240,7 +243,7 @@ plt.show()
 
 ![alt text](image-7.png)
 
-Only one category stands out from this visualization: `News & Politics`. This category has a much higher amount of dislikes compared to likes, implying that people may feel more passionate about the subject, and feel the need to engage more.
+Only one category stands out from this visualization: `News & Politics`. This category has a much higher amount of dislikes compared to likes, implying that people may feel more passionate about the subject, and feel the need to engage more negatively.
 
 
 ### Time Until Trending
@@ -312,6 +315,10 @@ Similarly, the `Nonprofits & Activism` category took the least amount of time to
 
 # Future Analysis
 
-Some of the things we would like to analyze given more time:
+Some of the things we would like to analyze/polish given more time:
 
 - Correlating tags with engagement and controversy
+- Drop duplicate rows, this was forgotten during this analysis
+- Figure out if the time it takes for a video to trend depends on if the topic is currently trending
+- Trends compared to other countries
+- Outliers in the data
